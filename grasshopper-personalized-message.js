@@ -13,7 +13,4 @@ function greet (name, owner) {
 */
 
 
-
-function greet (name, owner) {
-  return (name === owner) ? `Hello boss` : `Hello guest`;
-}
+const makeNegative = (num) => num > 0 ? num * -1 : num;
