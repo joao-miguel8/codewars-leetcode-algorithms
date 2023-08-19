@@ -23,10 +23,10 @@ var AmIAfraid = function(day, num){
 const illnessData = {
   "Monday": { num: num === 12 },
   "Tuesday": { num: num > 95 },
-  "Wednesday": { num: 34 },
-  "Thursday": { num: 0 },
+  "Wednesday": { num: num === 34 },
+  "Thursday": { num: num === 0 },
   "Friday": { num: num % 2 === 0 },
-  "Saturday": { num: 56 },
+  "Saturday": { num: num === 56 },
   "Sunday": { num: num === 666 || num === -666 },
 }
 return (illnessData[day].num);
