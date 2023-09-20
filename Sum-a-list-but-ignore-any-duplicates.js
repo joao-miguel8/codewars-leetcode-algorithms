@@ -5,6 +5,8 @@ For instance, for the list [3, 4, 3, 6] , the function should return 10.
 
 */
 
+// tried to use an imperative approach
+
 const sumNoDuplicates = numList => {
 	let sumValue = 0;
 	for (let i = 0; i < numList.length; i++) {
