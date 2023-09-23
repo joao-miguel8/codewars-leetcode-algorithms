@@ -1,4 +1,3 @@
-
 /*
 Your company MRE Tech has hired a spiritual consultant who advised on a new Balance policy: Don't take sides, don't favour, stay in the middle. This policy even applies to the software where all strings should now be centered. You are the poor soul to implement it.
 
@@ -8,7 +7,7 @@ Implement a function center that takes a string strng, an integer width, and an 
 center(strng, width, fill=' ')
 If the left and right padding cannot be of equal length make the padding on the left side one character longer.
 
-If strng is longer than width return strng unchanged.
+If strong is longer than width return strong unchanged.
 
 Examples
 center('a', 3)  # returns " a "
@@ -21,11 +20,10 @@ function center(strng, width, fill = ' ') {
 
 */
 
-
-function center (strng, width, fill = ' ') {
-  if(width < strng.length) {
-  return strng
-  }
-  const paddingSize = (width - strng.length) / 2
-  return fill.repeat(Math.ceil(paddingSize)) + strng + fill.repeat(Math.floor(paddingSize))
+function center(strng, width, fill = " ") {
+	if (width < strng.length) {
+		return strng;
+	}
+	const paddingSize = (width - strng.length) / 2;
+	return fill.repeat(Math.ceil(paddingSize)) + strng + fill.repeat(Math.floor(paddingSize));
 }
